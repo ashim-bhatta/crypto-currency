@@ -223,33 +223,6 @@ input[type=submit]{
   }
 }
 
-@media (max-width: 850px) {
-  .des-hero-bg{
-    background: url(../../assets/img/hero-bg.png);
-    height: 90vh;
-    min-height: 700px;
-    display: block;
-    background-size: cover;
-    background-color: #f3f7f9;
-    background-position: right top;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-}
-@media (max-width: 850px) {
-  .des-hero-bg{
-    background: url(../../assets/img/hero-bg.png);
-    height: 90vh;
-    min-height: 700px;
-    display: block;
-    background-size: cover;
-    background-color: #f3f7f9;
-    background-position: right top;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-}
-
 
 
 
