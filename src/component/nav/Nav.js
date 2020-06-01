@@ -1,72 +1,76 @@
-import React, { useState, useEffect } from 'react'
-
-import { FaUser } from 'react-icons/fa'
-
+import React, { useState } from 'react'
 import './nav.css'
+import imgLogo from '../../assets/img/logo.png'
 
-import logo from '../../assets/img/logo.png'
+// icon
+import { FaUser } from "react-icons/fa";
 const Nav = ( ) => {
-  const [ isNavOpen, setIsNavOpen ] = useState(false)
-  const [ menuItems, setMenuItems ] = useState([
+  const [ menuItems ] = useState([
     'solution',
     'features',
     'news',
     'about',
     'contact'
   ])
-
-  useEffect(()=>{
-    console.log(isNavOpen);
-  },[isNavOpen])
+  const [ isMobMenu, setIsMovMenu ] = useState(false)
   return(
     <>
       <nav>
-          <div className='logo'>
-              <img src={logo} alt='brand logo' />
+
+        {/* logo */}
+          <div className='logo-container'>
+            <img src={imgLogo}  alt='Brand Logo "crypto"'/>
           </div>
+
+          {/* desktop menu */}
           <div className='des-menu'>
-            <ul className='des-menu-items'>
+            <ul className="des-menu-items">
                 {
-                  menuItems.map((item) => {
+                  menuItems.map((menuItem) =>{
                     return(
-                      <li className='des-menu-item' key={item}>
-                          <a className='des-menu-item-link'>
-                              {item}
+                      <li className='des-menu-item' key={menuItem}>
+                          <a href='#' className='des-menu-link'>
+                            {menuItem}
                           </a>
                       </li>
                     )
                   })
                 }
-                <li className='des-menu-item-btn'>
-                    Sign Up Free
+                <li className='des-menu-btn'>
+                  get started
                 </li>
             </ul>
           </div>
-          <div className='mob-icon'>
-              <div className='user-icon'>
-                  <FaUser className='sign-icon' />
-              </div>
-              <div className='mob-menu-toggle' onClick={() => setIsNavOpen(!isNavOpen)}>
-                  <div className='line'></div>
-                  <div className='line'></div>
-                  <div className='line'></div>
-              </div>
+
+          {/* mobile menu toggler and user btn */}
+          <div className='mob-spceial'>
+            <div >
+              <FaUser  className='icon-user'/>
+            </div>
+
+            <div className={isMobMenu? 'mob-menu-toggler animated': "mob-menu-toggler"} onClick={() => setIsMovMenu(!isMobMenu)}>
+              <div className='line'></div>
+              <div className='line'></div>
+              <div className='line'></div>
+            </div>
           </div>
       </nav>
-      <div className={isNavOpen?'mob-menu open':'mob-menu'}>
-        <ul className='mob-menu-items'>
+
+
+      {/* mobile menu */}
+      <div className={isMobMenu? 'mob-menu open': "mob-menu"}>
+        <ul className="mob-menu-items">
             {
-              menuItems.map((item) => {
+              menuItems.map((menuItem) =>{
                 return(
-                  <li className='mob-menu-item' key={item}>
-                      <a className='mob-menu-item-link'>
-                          {item}
+                  <li className='mob-menu-item' key={menuItem}>
+                      <a href='#' className='mob-menu-link'>
+                        {menuItem}
                       </a>
                   </li>
                 )
               })
             }
-
         </ul>
       </div>
     </>

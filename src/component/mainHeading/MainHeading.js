@@ -1,34 +1,32 @@
 import React from 'react'
-
 import './mainHeading.css'
-import laptop from '../../assets/img/laptop.png'
+import imgLaptop from '../../assets/img/laptop.png'
+import Nav from '../nav/Nav'
 const MainHeading = ( ) => {
   return(
     <header className='main-heading'>
-      <div className='des-hero-bg'></div>
-        <div className='hero-content'>
-            <div className='a'>
-              <div className='hero-bg'></div>
-                <h1 className='hero-heading'>
-                    Invest in <span>Bitcoin</span>
-                    <br />
-                    Bitcoin Trading
-                </h1>
-                <p className='brand-description'>
-                  Use modern progressive technologies of Bitcoin to earn money
-                </p>
+        <Nav />
+        <div className='hero-bg'></div>
+        <div className='hero'>
+          <div className='hero-content'>
+            <h1 className='title'>
+              Invest in <span>Bitcoin</span>
+              <br />
+              Bitcoin <span>Trading</span>
+            </h1>
+            <p className='para'>
+              Use modern progressive technologies of Bitcoin to earn money
+            </p>
 
-                <form className='hero-form'>
-                    <input
-                      type='text'
-                      placeholder='Enter your email'
-                    />
-                    <input type='submit' value='get started' className='btn main-btn'/>
-                </form>
-            </div>
-            <div className='hero-main-img'>
-                <img src={laptop} />
-            </div>
+            <form>
+              <input type='text' placeholder='Enter your name' />
+              <input type='submit' value='get started' />
+            </form>
+          </div>
+
+          <div className='hero-img'>
+            <img src={imgLaptop} alt='laptop' />
+          </div>
         </div>
     </header>
   )
