@@ -31,7 +31,7 @@
 .feature{
   height: 250px;
   background-image: rgb(75, 89, 206);
-  box-shadow: 2px 2px 20px rgba(75, 89, 206, 0.2);
+  box-shadow: 2px 2px 20px rgba(75, 89, 206, 0.3);
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -40,7 +40,38 @@
 
 }
 .feature:hover{
-  box-shadow: 2px 2px 20px rgba(75, 89, 206, 0.4);
+  box-shadow: 2px 2px 20px rgba(75, 89, 206, 0.6);
+  background-color: white;
+  color: rgb(76, 182, 176);
+}
+.feature:hover .feature-icon{
+  background: rgb(76, 182, 176);
+}
+.feature:hover a{
+  color: rgb(76, 182, 176);
+  position: relative;
+  transition: 800ms
+}
+.feature a::after{
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  height: 2px;
+  background-color: rgb(76, 182, 176);
+  transition: right;
+  display: inline-block;
+  transform: scaleX(0);
+  transition: 300ms;
+  transition-delay: 800ms;
+  transform-origin: left;
+}
+.feature:hover a::after{
+  transform: scaleX(1);
+}
+.feature:hover .icon-feature{
+  fill : white
 }
 .feature-icon{
   width: 50px;
@@ -51,6 +82,9 @@
   align-items: center;
   justify-content: center;
   font-size: 30px;
+}
+.icon-feature{
+  fill: rgb(76, 182, 176)
 }
 .feature-title{
   margin: 20px 0;

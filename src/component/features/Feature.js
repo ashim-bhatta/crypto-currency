@@ -11,27 +11,27 @@ import './feature.css'
 const Feature = ( ) =>{
   const [ featureList ] = useState([
     {
-      icons : <FaMobileAlt style={{ fill : 'rgb(76, 182, 176)'}} />,
+      icons : <FaMobileAlt class="icon-feature" />,
       title : 'Mobile Apps',
     },
     {
-      icons : <AiOutlineSafety style={{ fill : 'rgb(76, 182, 176)'}} />,
+      icons : <AiOutlineSafety class="icon-feature" />,
       title : 'Safe & Secure',
     },
     {
-      icons : <FaWallet style={{ fill : 'rgb(76, 182, 176)'}} />,
+      icons : <FaWallet class="icon-feature" />,
       title : 'Wallet',
     },
     {
-      icons : <FaHeadset style={{ fill : 'rgb(76, 182, 176)'}} />,
+      icons : <FaHeadset class="icon-feature" />,
       title : 'Experts Support',
     },
     {
-      icons : <BsArrowRepeat style={{ fill : 'rgb(76, 182, 176)'}} />,
+      icons : <BsArrowRepeat class="icon-feature" />,
       title : 'Instant Exchange',
     },
     {
-      icons : <GoSettings style={{ fill : 'rgb(76, 182, 176)'}} />,
+      icons : <GoSettings class="icon-feature" />,
       title : 'Recuring Buys',
     },
   ])
@@ -49,7 +49,7 @@ const Feature = ( ) =>{
           {
             featureList.map((feature) => {
               return(
-                  <div className='feature' key={feature.icons}>
+                  <div className='feature' key={feature.title}>
                       <div className='feature-icon'>
                         {feature.icons}
                       </div>
