@@ -15,3 +15,13 @@ li{
 a{
   text-decoration: none;
 }
+.main-btn{
+  width: 150px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  color: rgba(32, 80, 158,01);
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+}
