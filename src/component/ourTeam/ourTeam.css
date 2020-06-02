@@ -1,0 +1,179 @@
+.our-team{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-title h2{
+  color: rgb(75, 89, 206);
+  font-size: 38px;
+  font-weight: 500;
+}
+.team-p{
+  max-width: 500px;
+}
+
+.team-list{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 70px 15px;
+  align-items: center;
+  padding: 15px;
+  margin-top: 50px;
+  text-align: center;
+
+}
+.team{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+.team:hover{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.team:hover .team-img{
+  transform: translateY(-70px;);
+}
+.team-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  position: absolute;
+}
+.team-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00ecbc;;
+  z-index: 2;
+  transform: scale(0.5);
+  transition: 0.5s;
+  border-radius: 50%;
+
+}
+.team-img .team-pic{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  z-index: 4;
+  transition: 0.4s;
+}
+
+.team-name{
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #00ecbc;
+  margin-top: 50px;
+}
+.team-position{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 8px;
+  font-weight: 900;
+}
+.team-detail-p{
+  font-size: 11px;
+  line-height: 16px;
+  max-width: 100%
+}
+.team-social{
+  display: flex;
+}
+.social-fb, .social-linked, .social-twitter{
+  width: 40px;
+  height: 40px;
+  background-color: #00ecbc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social-linked{
+  margin: 0 20px;
+}
+.social-icon{
+  fill: white;
+  color: white;
+}
+
+.team:hover .team-img::after{
+  transform: scale(01);
+    transition-delay: 0.5s;
+}
+
+.team:hover .team-pic{
+  transform: scale(0.6);
+  transition-delay: 200ms;
+}
+.team:hover .social-fb,
+.team:hover .social-linked,
+.team:hover .social-twitter{
+  background-color: white;
+  box-shadow: 2px 2px  rgba(0, 236, 188, 0.5);
+
+}
+.team:hover .social-icon{
+  fill: #00ecbc;
+  color: #00ecbc;
+}
+
+
+
+
+@media only screen and (min-width: 950px) {
+  .team{
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .team-list{
+    padding: 0 80px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* m */
