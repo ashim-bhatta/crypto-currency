@@ -54,9 +54,9 @@ const OurTeam = ( ) => {
           {
             teams.map((team) =>{
               return(
-                <div className='team'>
+                <div className='team' key={team.name}>
                     <div className='team-img'>
-                      <img className='team-pic' src={team.img}/>
+                      <img className='team-pic' src={team.img} alt={team.name}/>
                     </div>
                     <h3 className='team-name'>
                       {team.name}

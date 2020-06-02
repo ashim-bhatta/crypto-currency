@@ -11,32 +11,32 @@ import './feature.css'
 const Feature = ( ) =>{
   const [ featureList ] = useState([
     {
-      icons : <FaMobileAlt class="icon-feature" />,
+      icons : <FaMobileAlt className="icon-feature" />,
       title : 'Mobile Apps',
     },
     {
-      icons : <AiOutlineSafety class="icon-feature" />,
+      icons : <AiOutlineSafety className="icon-feature" />,
       title : 'Safe & Secure',
     },
     {
-      icons : <FaWallet class="icon-feature" />,
+      icons : <FaWallet className="icon-feature" />,
       title : 'Wallet',
     },
     {
-      icons : <FaHeadset class="icon-feature" />,
+      icons : <FaHeadset className="icon-feature" />,
       title : 'Experts Support',
     },
     {
-      icons : <BsArrowRepeat class="icon-feature" />,
+      icons : <BsArrowRepeat className="icon-feature" />,
       title : 'Instant Exchange',
     },
     {
-      icons : <GoSettings class="icon-feature" />,
+      icons : <GoSettings className="icon-feature" />,
       title : 'Recuring Buys',
     },
   ])
   return(
-    <dic className='features'>
+    <div className='features'>
       <div className='features-title'>
         <h2>
           our features
@@ -69,7 +69,7 @@ const Feature = ( ) =>{
             })
           }
       </div>
-    </dic>
+    </div>
   )
 }
 

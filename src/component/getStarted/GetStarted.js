@@ -7,16 +7,16 @@ import './getStarted.css'
 const GetStarted = ( ) => {
   const [ getStarted ] = useState([
     {
-      icons : <MdAccountBalanceWallet class="icon-feature" />,
+      icons : <MdAccountBalanceWallet className="icon-feature" />,
       title : 'Create Your Wallet',
     },
     {
-      icons : <IoLogoBitcoin class="icon-feature" />,
+      icons : <IoLogoBitcoin className="icon-feature" />,
       title : 'Manage Your Wallet',
     },
     {
-      icons : <FaBitcoin class="icon-feature" />,
-      title : 'Create Your Wallet',
+      icons : <FaBitcoin className="icon-feature" />,
+      title : 'Anything do with your wallet',
     }
   ])
   return(
