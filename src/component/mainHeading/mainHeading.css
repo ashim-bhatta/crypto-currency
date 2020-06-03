@@ -50,7 +50,7 @@ form{
   display: flex;
   flex-direction: column;
 }
-form input[type=text]{
+.hero-content form input[type=text]{
   width: 280px;
   height: 45px;
   border-radius: 100px;
@@ -67,7 +67,7 @@ form input[type=text]{
   color: #75849a;
   font-weight: 500;
 }
-form input[type=submit]{
+.hero-content form input[type=submit]{
   width: 170px;
   height: 45px;
   border-radius: 100px;
@@ -113,7 +113,7 @@ form input[type=submit]{
   }
 }
 @media only screen and (min-width: 750px) {
-  form{
+  .hero-content form{
     flex-direction: row;
   }
   .hero-bg{
@@ -129,7 +129,7 @@ form input[type=submit]{
 }
 
 @media only screen and (min-width: 850px) {
-  form{
+  .hero-content form{
     flex-direction: column;
   }
   .hero{
@@ -159,7 +159,7 @@ form input[type=submit]{
 
 
 @media only screen and (min-width: 1050px) {
-  form{
+  .hero-content form{
     flex-direction: row;
   }
   .hero-img img{
@@ -176,7 +176,7 @@ form input[type=submit]{
 
 
 @media only screen and (min-width: 1150px) {
-  form{
+  .hero-content form{
     flex-direction: row;
   }
   .title{

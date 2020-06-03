@@ -1,0 +1,107 @@
+.news{
+  width: 100%;
+  padding: 80px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.news-title{
+  color: rgb(75, 89, 206);
+  font-size: 42px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 20px 0 0px 0;
+
+}
+
+.news-list{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 30px;
+}
+.single-news{
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 1px 1px 30px grey;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.news-img{
+  width: 100%;
+  height: 270px;
+}
+.news-img img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+}
+
+.news-content{
+  padding: 15px 20px;;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.news-content p{
+  font-size: 14px;
+  color: #00ecbc;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  width: 100%;
+  text-align: left;
+  font-weight: 500
+}
+
+.news-content h3{
+  font-size: 14px;
+  color: rgb(75, 89, 206);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.action{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 15px;
+  right: 10px
+}
+.icon-heart, .icon-comment{
+  color: #00ecbc;
+  margin-right: 5px;
+  cursor: pointer;
+
+}
+.like span, .comment span{
+  color: grey;
+  margin-right: 30px;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+@media only screen and (min-width: 950px) {
+  .news-list{
+    padding: 0 80px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  }
+}
+
+
+
+
+
+
+
+
+/* c */

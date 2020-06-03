@@ -5,7 +5,8 @@ import Feature from '../component/features/Feature'
 import GetStarted from '../component/getStarted/GetStarted'
 import OurTeam from '../component/ourTeam/OurTeam'
 import User from '../component/user/User'
-
+import News from '../component/news/News'
+import Newsletter from '../component/newsletter/Newsletter'
 
 const Home = ( ) => {
   return(
@@ -16,6 +17,8 @@ const Home = ( ) => {
       <GetStarted />
       <OurTeam />
       <User />
+      <News />
+      <Newsletter />
     </>
   )
 }
