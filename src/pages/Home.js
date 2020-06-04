@@ -7,6 +7,7 @@ import OurTeam from '../component/ourTeam/OurTeam'
 import User from '../component/user/User'
 import News from '../component/news/News'
 import Newsletter from '../component/newsletter/Newsletter'
+import Footer from '../component/footer/Footer'
 
 const Home = ( ) => {
   return(
@@ -19,6 +20,7 @@ const Home = ( ) => {
       <User />
       <News />
       <Newsletter />
+      <Footer />
     </>
   )
 }

@@ -52,6 +52,8 @@ nav{
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #20509e;
+  width: 100%;
+  height: 100%;
 }
 .mob-menu-item:hover{
   background-color: #20509e;
@@ -152,7 +154,10 @@ nav{
   }
 }
 @media only screen and (min-width: 1050px) {
-
+  nav{
+    padding: 0 60px;
+    background-color: transparent;
+  }
   .des-menu-item{
     margin: 0 25px;
   }

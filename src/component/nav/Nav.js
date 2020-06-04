@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './nav.css'
 import imgLogo from '../../assets/img/logo.png'
+import { NavLink} from 'react-router-dom'
 
 // icon
 import { FaUser } from "react-icons/fa";
 const Nav = ( ) => {
   const [ menuItems ] = useState([
-    'solution',
+    'home',
     'features',
     'news',
     'about',
@@ -29,9 +30,9 @@ const Nav = ( ) => {
                   menuItems.map((menuItem) =>{
                     return(
                       <li className='des-menu-item' key={menuItem}>
-                          <a href='#' className='des-menu-link'>
+                      <NavLink to={menuItem} className='des-menu-link'>
                             {menuItem}
-                          </a>
+                      </NavLink>
                       </li>
                     )
                   })
@@ -63,11 +64,12 @@ const Nav = ( ) => {
             {
               menuItems.map((menuItem) =>{
                 return(
-                  <li className='mob-menu-item' key={menuItem}>
-                      <a href='#' className='mob-menu-link'>
-                        {menuItem}
-                      </a>
-                  </li>
+                    <NavLink to={menuItem} className='mob-menu-link'>
+                      <li className='mob-menu-item' key={menuItem}>
+
+                          {menuItem}
+                        </li>
+                    </NavLink>
                 )
               })
             }
